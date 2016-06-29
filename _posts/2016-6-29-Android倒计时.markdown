@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  AndroidTimeCountdown
-date:   2016-5-29
+title:  Android倒计时
+date:   2016-6-29
 categories: jekyll update
 ---
+
+使用RxAndroid实现倒计时功能
 
 {% highlight java %}
     private void timerCountDown() {
@@ -32,7 +34,8 @@ categories: jekyll update
             }
         });
     }
-{% endhighlight %}
+{% endhighlight %} 
+
 
 {% highlight java %}
     public Observable<Integer> countdown(int time) {
@@ -50,4 +53,9 @@ categories: jekyll update
                 })
                 .take(countTime);
     }
-{% endhighlight %}
+{% endhighlight %}  
+
+
+
+
+
